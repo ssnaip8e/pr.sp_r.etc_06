@@ -20,6 +20,14 @@
     flex-flow: row wrap;
     gap: @space;
     max-width: 900px;
+
+    & > * {
+      filter: opacity(85%);
+    }
+
+    & > *:hover {
+      filter: opacity(100%);
+    }
   }
 
   &__image {

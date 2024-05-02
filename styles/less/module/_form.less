@@ -1,0 +1,45 @@
+
+.form {
+  max-width: 500px;
+
+  & > label {
+    display: block;
+  }
+
+  & > label,
+  & > button {
+    margin-top: @space * .5;
+  }
+
+  & > input,
+  & > textarea {
+    border-color: @primary;
+  }
+
+  & > textarea {
+    max-width: 280px;
+    border-width: 2px;
+    border-style: inset;
+  }
+
+  & > input:focus,
+  & > textarea:focus {
+    outline: 2px dashed @primary;
+  }
+
+  & > button {
+    display: inline-block;
+    padding: (@space / 2) @space;
+    text-decoration: none;
+    color: @primary;
+    border: 2px solid @primary;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      color: @light;
+      background-color: @primary;
+    }
+  }
+}

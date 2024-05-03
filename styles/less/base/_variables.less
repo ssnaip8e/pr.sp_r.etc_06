@@ -10,8 +10,24 @@
 @font-large: @font-default * 3.25;
 
 // size
+@step: 1rem;
+@gap: @step;
+@paddings: {
+  auto: auto;
+  xl: @step / 2;
+  sm: @step;
+  md: @step * 1.5;
+  lg: @step * 2.5;
+  xlg: @step * 5;
+};
+@margins: {
+  auto: auto;
+  xl: @step / 2;
+  sm: @step;
+  md: @step * 1.5;
+  lg: @step * 2.5;
+  xlg: @step * 5;
+};
 @max-width-container: 90rem;
-@padding-container-inline: 100% - 3rem;
-@padding-container-block: 1rem;
-@space: 1.5rem;
-@gap: @space;
+@max-width-content: 60rem;
+

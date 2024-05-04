@@ -13,66 +13,71 @@
 </head>
 <body class="container">
 
-  <header class="header">
-    <p class="introduction">Interior's design. Made for living with love</p>
-    <nav class="header__nav nav">
-      <a class="nav__link" href="#">
+  <header class="header" aria-label="header">
+    <p class="introduction" aria-label="header intro">Interior's design. Made for living with love</p>
+
+    <nav class="header__nav nav" aria-label="navigation">
+      <a class="nav__link" href="#" aria-label="link on facebook">
         <svg class="icon icon_facebook">
           <use href="./assets/images/icons/sprite.svg#facebook"></use>
         </svg>
       </a>
-      <a class="nav__link" href="#">
+      <a class="nav__link" href="#" aria-label="link on linkedin">
         <svg class="icon icon_linkedin">
           <use href="./assets/images/icons/sprite.svg#linkedin"></use>
         </svg>
       </a>
-      <a class="nav__link" href="#">
+      <a class="nav__link" href="#" aria-label="link on instagram">
         <svg class="icon icon_instagram">
           <use href="./assets/images/icons/sprite.svg#instagram"></use>
         </svg>
       </a>
-      <a class="nav__link" href="#">
+      <a class="nav__link" href="#" aria-label="link on twitter">
         <svg class="icon icon_twitter">
           <use href="./assets/images/icons/sprite.svg#twitter"></use>
         </svg>
       </a>
-      <a class="nav__link" href="#">
+      <a class="nav__link" href="#" aria-label="link on telegram">
         <svg class="icon icon_telegram">
           <use href="./assets/images/icons/sprite.svg#telegram"></use>
         </svg>
       </a>
     </nav>
-
-    <div class="header__label label">
-      <div class="label__inner">
-        <h1 class="label__title">Interior's Design</h1>
-        <p class="label__text">Enjoy your life</p>
-      </div>
-    </div>
   </header>
 
-  <main class="main">
-    <section class="section">
+  <div class="label" role="banner" aria-label="banner">
+    <div class="label__inner">
+      <h1 class="label__title">Interior's Design</h1>
+
+      <p class="label__text">Enjoy your life</p>
+    </div>
+  </div>
+
+  <main class="main" aria-label="main">
+    <section class="section" aria-label="a bit of me">
       <div class="section__intro">
         <h2 class="section__title">A bit of me</h2>
+
         <p class="section__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
         <p class="section__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.</p>
-        <a class="section__link" href="#">Get more</a>
+
+        <a class="section__link" href="#" aria-label="link on get more">Get more</a>
       </div>
 
       <div class="section__image">
-        <img class="image" src="./assets/images/image-3.webp" alt="image contents">
+        <img class="image" src="./assets/images/image-3.webp" alt="image contents" loading="lazy">
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" aria-label="portfolio">
       <div class="section__intro">
         <h2 class="section__title">Portfolio</h2>
+
         <p class="section__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.</p>
+
         <div class="section__image">
           <img class="image" src="./assets/images/image-2.webp" alt="image contents">
         </div>
-        <a class="section__link" href="#">Get more</a>
       </div>
 
       <div class="section__images">
@@ -94,14 +99,16 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" aria-label="some more information">
       <div class="section__intro">
         <h2 class="section__title">Some more information</h2>
+
         <p class="section__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+
         <div class="section__links">
-          <a class="section__link" href="#">Get more</a>
-          <a class="section__link" href="#">Contacts</a>
+          <a class="section__link" href="#" aria-label="link on get more">Get more</a>
+          <a class="section__link" href="#contacts" aria-label="link on contacts">Contacts</a>
         </div>
       </div>
 
@@ -110,56 +117,61 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" aria-label="our contacts" id="contacts">
       <div class="section__contacts">
         <h2 class="section__title">Our contacts</h2>
-        <form class="section__form form" action="#">
-          <label for="">Name:</label>
-          <input type="text" name="" id="">
-          <label for="">E-mail:</label>
-          <input type="email" name="" id="">
-          <label for="">Message</label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <button class="button" type="submit">Call Us</button>
+
+        <form class="section__form form" action="#" aria-label="form contacts">
+          <label for="name-id" aria-labelledby="name-id">Name:</label>
+          <input type="text" name="name-id" id="name-id" aria-label="name" required>
+          <label for="email-id" aria-labelledby="email-id">E-mail:</label>
+          <input type="email" name="email-id" id="email-id" aria-label="email" required>
+          <label for="textaria-id" aria-labelledby="textaria-id">Message</label>
+          <textarea name="textaria-id" id="textaria-id" cols="30" rows="10" aria-label="textaria"></textarea>
+          <button class="button" type="submit" aria-label="button submit">Call Us</button>
         </form>
       </div>
 
-      <div class="section__intro">
-        <iframe class="iframe" src="https://yandex.by/map-widget/v1/?ll=27.727503%2C53.882847&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDExNxIc0JHQtdC70LDRgNGD0YHRjCwg0JzRltC90YHQuiIKDQ5y3EEVZpxXQg%2C%2C&z=10.89" frameborder="0" allowfullscreen="true"></iframe>
+      <div class="section__iframe" aria-label="box for iframe">
+        <iframe class="iframe" src="https://yandex.by/map-widget/v1/?ll=27.727503%2C53.882847&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDExNxIc0JHQtdC70LDRgNGD0YHRjCwg0JzRltC90YHQuiIKDQ5y3EEVZpxXQg%2C%2C&z=10.89" frameborder="0" allowfullscreen="true" aria-label="iframe" id="iframe-id"></iframe>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p class="introduction">Interior's design. Made for living with love</p>
-    <nav class="footer__nav nav">
-      <a class="nav__link" href="#">
-        <svg class="icon icon_facebook">
-          <use href="./assets/images/icons/sprite.svg#facebook"></use>
-        </svg>
-      </a>
-      <a class="nav__link" href="#">
-        <svg class="icon icon_linkedin">
-          <use href="./assets/images/icons/sprite.svg#linkedin"></use>
-        </svg>
-      </a>
-      <a class="nav__link" href="#">
-        <svg class="icon icon_instagram">
-          <use href="./assets/images/icons/sprite.svg#instagram"></use>
-        </svg>
-      </a>
-      <a class="nav__link" href="#">
-        <svg class="icon icon_twitter">
-          <use href="./assets/images/icons/sprite.svg#twitter"></use>
-        </svg>
-      </a>
-      <a class="nav__link" href="#">
-        <svg class="icon icon_telegram">
-          <use href="./assets/images/icons/sprite.svg#telegram"></use>
-        </svg>
-      </a>
-    </nav>
-    <p class="footer__text">2023 Practical landing</p>
+  <footer class="footer" aria-label="footer">
+    <div class="footer__inner">
+      <p class="introduction" aria-label="footer intro">Interior's design. Made for living with love</p>
+
+      <nav class="footer__nav nav" aria-label="navigation">
+        <a class="nav__link" href="#" aria-label="link on facebook">
+          <svg class="icon icon_facebook">
+            <use href="./assets/images/icons/sprite.svg#facebook"></use>
+          </svg>
+        </a>
+        <a class="nav__link" href="#" aria-label="link on linkedin">
+          <svg class="icon icon_linkedin">
+            <use href="./assets/images/icons/sprite.svg#linkedin"></use>
+          </svg>
+        </a>
+        <a class="nav__link" href="#" aria-label="link on instagram">
+          <svg class="icon icon_instagram">
+            <use href="./assets/images/icons/sprite.svg#instagram"></use>
+          </svg>
+        </a>
+        <a class="nav__link" href="#" aria-label="link on twitter">
+          <svg class="icon icon_twitter">
+            <use href="./assets/images/icons/sprite.svg#twitter"></use>
+          </svg>
+        </a>
+        <a class="nav__link" href="#" aria-label="link on telegram">
+          <svg class="icon icon_telegram">
+            <use href="./assets/images/icons/sprite.svg#telegram"></use>
+          </svg>
+        </a>
+      </nav>
+    </div>
+
+    <p class="footer__text" aria-label="copyright">2023 Practical landing</p>
   </footer>
 
 </body>

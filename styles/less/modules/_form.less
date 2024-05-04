@@ -8,33 +8,32 @@
 
   & > label,
   & > button {
-    margin-top: @step * .5;
+    margin-top: @margins[xl];
   }
 
   & > input,
   & > textarea {
-    border-color: @primary;
+    border: @border-width @border-style @border-color;
   }
 
   & > textarea {
     max-width: 280px;
-    border-width: 2px;
-    border-style: inset;
   }
 
   & > input:focus,
   & > textarea:focus {
-    outline: 2px dashed @primary;
+    outline: @outline-width @outline-style @outline-color;
+    outline-offset: 2px;
   }
 
   & > button {
-    display: inline-block;
-    padding: (@step / 2) @step;
+    display: block;
+    padding: @paddings[xl] @paddings[sm];
     text-decoration: none;
     color: @primary;
-    border: 2px solid @primary;
-    border-radius: 8px;
-    background-color: #fff;
+    border: @border-width @border-style @border-color;
+    border-radius: @border-radius;
+    background-color: transparent;
     cursor: pointer;
 
     &:hover {

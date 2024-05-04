@@ -1,12 +1,10 @@
-# project.single-page(responsive).others(06)
+> project.single-page(responsive).others(06)
 
-
-
-## Сайт-лэндинг Interier Design 
+# Одностраничный сайт 'Interier Design'
 
 Состав:
 + Редизайн макета из интернета
-+ Применение препроцессора LESS
-+ Применение методолгии SMACSS
-+ Применение нейминга от BEM
-+ Responsive
++ Препроцессор LESS
++ Нейминг BEM
++ Адаптивность
++ Доступность

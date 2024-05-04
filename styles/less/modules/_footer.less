@@ -1,0 +1,22 @@
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-block: @paddings[sm];
+  padding-inline: @paddings[md];
+  margin-top: @margins[xlg];
+  min-height: 15vh;
+
+  &__text {
+    text-align: center;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    gap: @paddings[sm];
+    margin-bottom: @margins[sm];
+  }
+}

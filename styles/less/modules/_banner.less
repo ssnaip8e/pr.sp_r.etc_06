@@ -1,0 +1,24 @@
+
+.label {
+  position: relative;
+  min-height: 100vh;
+  background-image: url('./../../../assets/images/image-1.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__inner {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    padding-block: @paddings[sm];
+    padding-inline: @paddings[lg];
+    background-color: @primary;
+    filter: opacity(85%);
+  }
+
+  &__title {
+    font-size: @font-large;
+    color: @light;
+  }
+}

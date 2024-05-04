@@ -1,0 +1,44 @@
+
+.form {
+  max-width: 500px;
+
+  & > label {
+    display: block;
+  }
+
+  & > label,
+  & > button {
+    margin-top: @margins[xl];
+  }
+
+  & > input,
+  & > textarea {
+    border: @border-width @border-style @border-color;
+  }
+
+  & > textarea {
+    max-width: 280px;
+  }
+
+  & > input:focus,
+  & > textarea:focus {
+    outline: @outline-width @outline-style @outline-color;
+    outline-offset: 2px;
+  }
+
+  & > button {
+    display: block;
+    padding: @paddings[xl] @paddings[sm];
+    text-decoration: none;
+    color: @primary;
+    border: @border-width @border-style @border-color;
+    border-radius: @border-radius;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      color: @light;
+      background-color: @primary;
+    }
+  }
+}

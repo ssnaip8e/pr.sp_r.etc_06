@@ -1,5 +1,8 @@
 > project.single-page(responsive).others(06)
 
+> Сетка изображений сбилась.
+> Проверить адаптив.
+
 # Одностраничный сайт 'Interier Design'
 
 Состав:
